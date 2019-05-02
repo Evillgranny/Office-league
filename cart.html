@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Контакты</title>
+    <title>Корзина</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -276,44 +276,130 @@
 
 
 <main>
-    <section class="contacts-block py-5 position-relative">
+    <div class="all-bg">
+    <section class="cart py-5 position-relative">
         <div class="wrapper ">
-            <h2 class="contacts-block-main mb-4 mt-5">Контакты</h2>
-            <div class="contacts-block-content flex-column flex-md-row d-flex justify-content-between mt-5">
-                <div class="contacts-left">
-                    <h3 class="contacts-company-name mb-4">ООО «Офисная Лига» - официальный дилер»</h3>
-                    <h6 class="contacts-block-mini-name mb-4">Адрес:</h6>
-                    <p class="contacts-block-mini-text mb-4">246050, Беларусь, Гомель, ул. Гагарина, 49 (бизнес-центр «Авангард»)</p>
-                    <h6 class="contacts-block-mini-name mb-4">График работы:</h6>
-                    <p class="contacts-block-mini-text mb-4">Пн. – Пт.: с 9-00 до 18-00 <br> Сб.- Вс.: выходной</p>
-                    <h6 class="contacts-block-mini-name mb-4">Телефоны:</h6>
-                    <p class="contacts-block-mini-text mb-4">
-                        <a href="tel: +375232700270">+375 232 70-02-70</a>   <br>
-                        <a href="tel: +375232700269">+375 232 70-02-69</a> <br>
-                        <a href="tel: +375293853753">+375 29 385-37-53</a> velcom
-                    </p>
-                    <h6 class="contacts-block-mini-name mb-4">Email:</h6>
-                    <p class="contacts-block-mini-text"><a href="mailto: vvp@ofisnayaliga.by">vvp@ofisnayaliga.by</a></p>
-                </div>
+            <div class="cart-content">
+                <h2 class="cart-main  mb-4 mt-5">Корзина</h2>
 
-                <div class="contacts-right d-flex flex-column align-self-end mt-5 mt-md-0">
-                    <input type="text" class="contact-right-input" placeholder="Имя">
-                    <input type="text" class="contact-right-input"  placeholder="+375 (_ _) _ _ _  _ _  _ _" id="contactsInput">
-                    <textarea class="contact-right-textarea" placeholder="Собщение"></textarea>
-                    <button class="contact-right-btn ml-auto">СВЯЗАТЬСЯ</button>
-                </div>
+                <div class="cart-hr mb-4"></div>
+
+                <ul class="cart-goods">
+                    <li class="cart-good d-flex flex-column flex-md-row">
+                        <img src="img/images/good.png" alt="" class="cart-good-img mr-md-4 mr-lg-5 align-self-center">
+
+                        <div class="cart-good-text mr-2 mr-lg-5 py-4 py-md-5">
+                            <h3 class="cart-good-main">Офисное кресло Lamark</h3>
+                            <p class="cart-good-price">550р</p>
+                            <p class="cart-good-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+
+                        <div class="cart-counter-all d-flex flex-column align-self-center">
+                            <div class="cart-counter-block d-flex ml-2 ml-lg-5 mt-md-5">
+                                <button class="dec">–</button>
+                                <input id="countID" class="amount" value="1" readonly>
+                                <button class="inc">+</button>
+                            </div>
+
+                            <span class="delete-good mt-3 mb-5 mb-md-0 text-center text-md-right">УДАЛИТЬ</span>
+                        </div>
+                    </li>
+
+                    <li class="cart-good d-flex flex-column flex-md-row">
+                        <img src="img/images/good.png" alt="" class="cart-good-img mr-md-4 mr-lg-5 align-self-center">
+
+                        <div class="cart-good-text mr-2 mr-lg-5 py-4 py-md-5">
+                            <h3 class="cart-good-main">Офисное кресло Lamark</h3>
+                            <p class="cart-good-price">550р</p>
+                            <p class="cart-good-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+
+                        <div class="cart-counter-all d-flex flex-column align-self-center">
+                            <div class="cart-counter-block d-flex ml-2 ml-lg-5 mt-md-5">
+                                <button class="dec">–</button>
+                                <input id="countID" class="amount" value="1" readonly>
+                                <button class="inc">+</button>
+                            </div>
+
+                            <span class="delete-good mt-3 mb-5 mb-md-0 text-center text-md-right">УДАЛИТЬ</span>
+                        </div>
+                    </li>
+
+                    <li class="cart-good d-flex flex-column flex-md-row">
+                        <img src="img/images/good.png" alt="" class="cart-good-img mr-md-4 mr-lg-5 align-self-center">
+
+                        <div class="cart-good-text mr-2 mr-lg-5 py-4 py-md-5">
+                            <h3 class="cart-good-main">Офисное кресло Lamark</h3>
+                            <p class="cart-good-price">550р</p>
+                            <p class="cart-good-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+
+                        <div class="cart-counter-all d-flex flex-column align-self-center">
+                            <div class="cart-counter-block d-flex ml-2 ml-lg-5 mt-md-5">
+                                <button class="dec">–</button>
+                                <input id="countID" class="amount" value="1" readonly>
+                                <button class="inc">+</button>
+                            </div>
+
+                            <span class="delete-good mt-3 mb-5 mb-md-0 text-center text-md-right">УДАЛИТЬ</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
-
-            <div class="bread-crumbs d-none d-sm-block">
-                <a href="index.html"><img src="img/icon/home-icon.png" alt="" class="bread-crumb-img"></a><a href="contacts.html">Контакты</a>
+            <div class="cart-hr mb-4"></div>
+            <div class="bread-crumbs d-none d-sm-block red-after">
+                <a href="index.html" class=""><img src="img/icon/red-house.png" alt="" class="bread-crumb-img "></a><a href="cart.html">Корзина</a>
             </div>
         </div>
 
     </section>
 
-    <section class="map w-100 position-relative">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A541cf73264f645339355f5cb714ae5579beac9878c5a282b1df7e867c0f348f0&amp;source=constructor" width="100%" height="386" frameborder="0"></iframe>
+    <section class="price-result py-5">
+        <div class="wrapper">
+            <div class="pricer-result-containert d-flex flex-column flex-lg-row ">
+                <div class="price-result-left col-12 col-lg-7 order-1 order-lg-0">
+                    <div class="price-result-cupon d-flex flex-column flex-md-row">
+                        <h6 class="price-result-main align-self-md-center mr-5 mb-md-0">Введите купон</h6>
+                        <div class="cupon-button-block d-flex">
+                            <input type="text" class="cupon-enter">
+                            <button class="get-cupon">Применить</button>
+                        </div>
+                    </div>
+
+                    <h6 class="price-result-main mt-4">Способ доставки</h6>
+                    <div class="price-result-radio-block d-flex flex-column mt-4">
+                        <label class="price-resilt-label  mb-4"><input type="radio" name="delivery-method" class="price-resilt-radio" checked><span class="radio-cart">Название</span></label>
+                        <label class="price-resilt-label"><input type="radio" name="delivery-method" class="price-resilt-radio"><span class="radio-cart">Название</span></label>
+                    </div>
+
+                    <h6 class="price-result-main mt-4">Способ оплаты</h6>
+                    <div class="price-result-radio-block d-flex flex-column mt-4">
+                        <label class="price-resilt-label  mb-4"><input type="radio" name="payment-method" class="price-resilt-radio" checked><span class="radio-cart">Название</span></label>
+                        <label class="price-resilt-label"><input type="radio" name="payment-method" class="price-resilt-radio"><span class="radio-cart">Название</span></label>
+                    </div>
+                    <h6 class="price-result-main mt-4">Контактные данные</h6>
+                    <form class="price-result-form">
+                        <div class="price-result-form-first-row d-flex flex-column flex-md-row ">
+                            <input type="text" class="price-result-form-input mr-5" placeholder="Имя">
+                            <input type="text" class="price-result-form-input mt-3 mt-md-0" id="priceResultPhone" placeholder="+375 (_ _) _ _ _  _ _  _ _">
+                        </div>
+                        <input type="email" class="price-result-form-input mt-3" placeholder="email">
+                        <div class="textarea-price-result-block">
+                            <textarea class="price-result-textarea mt-3" placeholder="Комментарий"></textarea>
+                        </div>
+                        <div class="price-form-result d-flex mt-5 flex-column flex-md-row">
+                            <p class="price-form-result-text align-self-md-center mr-5 mb-3 mb-md-0">Сумма к оплате: <span class="price-result">184,00 руб</span></p>
+                            <button class="price-form-result-btn ">ОФОРМИТЬ ЗАКАЗ</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="price-result-right col-12 col-lg-5 order-0 order-lg-1">
+                    <p class="price-result-right-text">Сумма к оплате: <span>184,00 руб</span></p>
+                </div>
+            </div>
+        </div>
     </section>
+    </div>
 </main>
 
 

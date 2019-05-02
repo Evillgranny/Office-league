@@ -19,6 +19,8 @@ let phonesMobile = document.querySelector('.phones-mobile');
 let modalInputsBlock = document.querySelector('.modal-city-inputs');
 let choiseCity = document.querySelector('.choiseCity');
 let cityList = document.querySelector('.city-list');
+let cartCounter = 1;
+
 
 function showCatalog() {
     $(defaultMenu).hide();
@@ -180,7 +182,12 @@ $(function(){
 $(function(){
     $('#modalPhoneInput').inputmask("+375 (99) 999 -99 -99");
 });
-
+$(function(){
+    $('#contactsInput').inputmask("+375 (99) 999 -99 -99");
+});
+$(function(){
+    $('#priceResultPhone').inputmask("+375 (99) 999 -99 -99");
+});
 function modalClose(elem){
     elem.hide();
 }
@@ -199,6 +206,9 @@ $(modalInputsBlock).change(function () {
    }
 });
 
+
+
+
 $('#getCallBack').click(function () {
     $('#callBack').show();
 });
@@ -216,8 +226,15 @@ $('#sendCb').click(function () {
         });
     }
 );
-
-
+//Счётчик в корзине
+$('.inc').on('click', function() {
+    const $input = $(this).closest('div').find('input');
+    $input.val(parseInt($input.val(), 10) + 1);
+});
+$('.dec').on('click', function() {
+    const $input = $(this).closest('div').find('input');
+    parseInt($input.val(), 10) > 1 && $input.val(parseInt($input.val(), 10) - 1);
+});
 
 // owl carousel
 

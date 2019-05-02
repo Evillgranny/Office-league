@@ -178,6 +178,19 @@
     }
     /*end novice*/
 }
+@media screen  and (max-width: 767px) {
+/*!*contacts*/
+    .contacts-right {
+        width: 100%;
+    }
+    .contacts-right input,
+    .contacts-right textarea {
+        width: 100%;
+    }
+/*end contacts*/
+
+}
+
 @media screen  and (max-width: 720px) {
     .hit-card {
         width: 220px;
@@ -330,6 +343,9 @@
         font-size: 12px;
     }
     /*end modals*/
+    .price-result-textarea {
+        width: 100%;
+    }
 }
 
 @media screen  and (max-width: 500px) {
@@ -366,6 +382,13 @@
     .contacts .call-for-me-mobile {
         display: block !important;
         width: 100%;
+    }
+    .cupon-enter {
+        width: 100px;
+    }
+    .get-cupon {
+        padding-right: 10px;
+        padding-left: 10px;
     }
 }
 @media screen  and (max-width: 480px) {
@@ -452,7 +475,7 @@
         padding-bottom: 10px;
     }
     .down-nav-mobile {
-        top: 193px;
+        top: 212px;
     }
     .nav-phone::after {
         right: 0;

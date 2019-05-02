@@ -1471,22 +1471,16 @@ button.owl-dot.active span {
 /*END MODAL*/
 
 
-
-
-
-/*CONTACTS START*/
+/*ABOUT START*/
 .cotntacs-main-block {
     background: url(../img/images/contacts-bg.png) no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     min-height: 975px;
 }
-.cotntacs-main-block .wrapper {
-    position: relative;
-}
 .bread-crumbs {
     position: absolute;
-    top: 0;
+    top: 60px;
 }
 .bread-crumbs a {
     color: #fff;
@@ -1525,4 +1519,290 @@ button.owl-dot.active span {
 .cotntacs-main-text-content {
     max-width: 930px;
 }
-/*END CONTACTS*/
+/*END ABOUT*/
+
+/*START CONTACTS*/
+.contacts-block {
+    background: url(../img/images/contacts-bg.png) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 870px;
+}
+.contacts-block-main {
+    text-align: center;
+    color: #ea000c;
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.contacts-company-name {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.contacts-block-mini-name {
+    font-size: 18px;
+    color: #ea000c;
+    text-transform: uppercase;
+}
+.contacts-block-mini-text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.contacts-block-mini-text a {
+    color: #fff;
+}
+.contact-right-input {
+    width: 330px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    color: #fff;
+    background: transparent;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+}
+.contacts-right input::-webkit-input-placeholder {color:#fff;}
+.contacts-right input::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.contacts-right input:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+.contacts-right input:-ms-input-placeholder      {color:#fff;}
+.contact-right-textarea {
+    width: 330px;
+    height: 115px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    color: #fff;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+}
+.contacts-right textarea::-webkit-input-placeholder {color:#fff;}
+.contacts-right textarea::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.contacts-right textarea:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+.contacts-right textarea:-ms-input-placeholder      {color:#fff;}
+.contact-right-btn {
+    width: 201px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+}
+.contact-right-btn:hover {
+    background: #000;
+    color: #fff;
+}
+/*EMD CONTACTS*/
+/*CART*/
+.all-bg{
+    background: url("../img/images/cartBG.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.cart-main {
+    color: #ea000c;
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+.cart-hr {
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+}
+.cart-counter-block {
+    height: 36px;
+}
+.cart-good-img {
+    width: 195px;
+    height: 212px;
+}
+.cart-good-main {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.cart-good-price {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.cart-good-description {
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+}
+.dec {
+    width: 50px;
+    border: 1px solid  #ea000c;
+    background-color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px 0 0 8px;
+}
+.dec:hover {
+    background-color: #ea000c;
+}
+.amount {
+    width: 50px;
+    text-align: center;
+    background-color: #ea000c;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+.inc {
+    width: 50px;
+    border: 1px solid  #ea000c;
+    background-color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 0 8px 8px 0;
+}
+.inc:hover {
+    background-color: #ea000c;
+}
+.delete-good {
+    color: #ea000c;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+    text-align: right;
+    cursor: pointer;
+}
+.delete-good::before {
+    content: url(../img/images/good-cross.png);
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+.delete-good:hover {
+    color: #000;
+}
+.price-result-main {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.cupon-enter {
+    width: 145px;
+    height: 36px;
+    border-radius: 8px 0  0 8px;
+    border: 1px solid #ea000c;
+    background-color: #ffffff;
+    color: #ea000c;
+    padding-left: 10px;
+}
+.get-cupon {
+    background-color: #ea000c;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 0 8px 8px 0;
+}
+.get-cupon:hover {
+    border: 1px solid #ea000c;
+    background-color: #fff;
+    color: #ea000c;
+}
+.price-resilt-radio {
+    display: none;
+}
+.radio-cart {
+    cursor: pointer;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+}
+.price-resilt-radio ~.radio-cart::before {
+    content: url("../img/icon/price-result-before.png");
+    cursor: pointer;
+    margin-right: 15px;
+}
+.price-resilt-radio:checked ~ .radio-cart::before {
+    content: url("../img/icon/price-result-before-checked.png");
+    cursor: pointer;
+}
+.price-result-form-input {
+    width: 230px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid #ea000c;
+    padding: 10px;
+    background-color: transparent;
+}
+.price-result-textarea {
+    width: 513px;
+    height: 126px;
+    border-radius: 4px;
+    border: 1px solid #ea000c;
+    padding: 10px;
+    background-color: transparent;
+}
+
+
+.price-result-form input::-webkit-input-placeholder {color:#000;}
+.price-result-form input::-moz-placeholder          {color:#000;}/* Firefox 19+ */
+.price-result-form input:-moz-placeholder           {color:#000;}/* Firefox 18- */
+.price-result-form input:-ms-input-placeholder      {color:#000;}
+.price-result-form .price-result-textarea::-webkit-input-placeholder {color:#000;}
+.price-result-form .price-result-textarea::-moz-placeholder          {color:#000;}/* Firefox 19+ */
+.price-result-form .price-result-textarea:-moz-placeholder           {color:#000;}/* Firefox 18- */
+.price-result-form .price-result-textarea:-ms-input-placeholder      {color:#000;}
+
+.price-form-result-text {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.price-form-result-text  span{
+    color: #ea000c;
+}
+.price-form-result-btn {
+    width: 210px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #ea000c;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.price-form-result-btn:hover {
+    color :#ea000c;
+    border: 1px solid #ea000c;
+    background-color: #fff;
+}
+.price-result-right-text {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.price-result-right-text span{
+    color: #ea000c;
+}
+.red-after a::after {
+    color: #ea000c !important;
+}
+/*END CART*/
