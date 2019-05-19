@@ -443,6 +443,12 @@
         right: -20px;
         top: 40px;
     }
+    .enter-reg-inputs {
+        width: 100%;
+    }
+    .enter-reg-block {
+        width: 100%;
+    }
 }
 @media screen  and (max-width: 440px) {
     .responsive-logo {

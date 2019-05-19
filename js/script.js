@@ -20,6 +20,7 @@ let modalInputsBlock = document.querySelector('.modal-city-inputs');
 let choiseCity = document.querySelector('.choiseCity');
 let cityList = document.querySelector('.city-list');
 let cartCounter = 1;
+let cardBonusBtn = document.querySelectorAll('.card-bonus');
 
 
 function showCatalog() {
@@ -235,6 +236,17 @@ $('.dec').on('click', function() {
     const $input = $(this).closest('div').find('input');
     parseInt($input.val(), 10) > 1 && $input.val(parseInt($input.val(), 10) - 1);
 });
+
+// choise login-reg
+    $('.enter-reg-block').change(function () {
+       if ($('#loginCheck').prop('checked')) {
+           $('#enterBlock').show();
+           $('#registrationBlock').hide();
+       } else if ($('#regCheck').prop('checked')) {
+           $('#enterBlock').hide();
+           $('#registrationBlock').show();
+       }
+    });
 
 // owl carousel
 

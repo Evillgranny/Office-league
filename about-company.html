@@ -182,7 +182,7 @@
                     <span class="shop-basket-item-number">1</span>
                     <img class="shop-basket-item favorite" src="img/svg/favorite-01.svg" alt="">
                     <span class="shop-basket-item-number">1</span>
-                    <img class="shop-basket-item b-cart" src="img/svg/cart-01.svg" alt="">
+                    <a href="cart.html"><img class="shop-basket-item b-cart" src="img/svg/cart-01.svg" alt=""></a>
                     <span class="shop-basket-item-number">1</span>
                     <span class="price">580р</span>
                     <input class="search-input" type="text">
@@ -232,7 +232,7 @@
         <span class="shop-basket-item-number">1</span>
         <img class="shop-basket-item favorite" src="img/svg/favorite-01.svg" alt="">
         <span class="shop-basket-item-number">1</span>
-        <img class="shop-basket-item b-cart" src="img/svg/cart-01.svg" alt="">
+        <a href="cart.html"><img class="shop-basket-item b-cart" src="img/svg/cart-01.svg" alt=""></a>
         <span class="shop-basket-item-number">1</span>
         <span class="price">580р</span>
     </div>
@@ -502,7 +502,15 @@
     </h2>
 </section>
 
-
+<section class="modal-call">
+    <p class="modal__paragraph">Мы обязательно вам перезвоним!</p>
+    <form action="#" method="post">
+        <label class="visually-hidden" for="user-number">Номер телефона</label>
+        <input class="modal__input" id="user-number" type="text" placeholder="Ваш номер телефона">
+        <button class="modal__button" type="submit">Заказать звонок</button>
+    </form>
+    <button class="modal__button-close" type="button">Закрыть</button>
+</section>
 <!-- SCRIPTS -->
 <!-- JQuery -->
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>

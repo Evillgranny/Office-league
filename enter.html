@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Контакты</title>
+    <title>Вход</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -274,45 +274,58 @@
     </div>
 </div>
 
-
 <main>
-    <section class="contacts-block py-5 position-relative">
+    <section class="enter-block py-5 position-relative">
         <div class="wrapper">
-            <h2 class="contacts-block-main mb-4 mt-5">Контакты</h2>
-            <div class="contacts-block-content flex-column flex-md-row d-flex justify-content-between mt-5">
-                <div class="contacts-left">
-                    <h3 class="contacts-company-name mb-4">ООО «Офисная Лига» - официальный дилер»</h3>
-                    <h6 class="contacts-block-mini-name mb-4">Адрес:</h6>
-                    <p class="contacts-block-mini-text mb-4">246050, Беларусь, Гомель, ул. Гагарина, 49 (бизнес-центр «Авангард»)</p>
-                    <h6 class="contacts-block-mini-name mb-4">График работы:</h6>
-                    <p class="contacts-block-mini-text mb-4">Пн. – Пт.: с 9-00 до 18-00 <br> Сб.- Вс.: выходной</p>
-                    <h6 class="contacts-block-mini-name mb-4">Телефоны:</h6>
-                    <p class="contacts-block-mini-text mb-4">
-                        <a href="tel: +375232700270">+375 232 70-02-70</a>   <br>
-                        <a href="tel: +375232700269">+375 232 70-02-69</a> <br>
-                        <a href="tel: +375293853753">+375 29 385-37-53</a> velcom
-                    </p>
-                    <h6 class="contacts-block-mini-name mb-4">Email:</h6>
-                    <p class="contacts-block-mini-text"><a href="mailto: vvp@ofisnayaliga.by">vvp@ofisnayaliga.by</a></p>
-                </div>
-
-                <div class="contacts-right d-flex flex-column align-self-end mt-5 mt-md-0">
-                    <input type="text" class="contact-right-input" placeholder="Имя">
-                    <input type="text" class="contact-right-input"  placeholder="+375 (_ _) _ _ _  _ _  _ _" id="contactsInput">
-                    <textarea class="contact-right-textarea" placeholder="Собщение"></textarea>
-                    <button class="contact-right-btn ml-auto">СВЯЗАТЬСЯ</button>
-                </div>
-            </div>
-
             <div class="bread-crumbs d-none d-sm-block">
-                <a href="index.html"><img src="img/icon/home-icon.png" alt="" class="bread-crumb-img"></a><a href="contacts.html">Контакты</a>
+                <a href="index.html"><img src="img/icon/home-icon.png" alt="" class="bread-crumb-img"></a><a href="enter.html">Вход</a>
             </div>
-        </div>
+            <h1 class="enter-main">Вход</h1>
 
+            <div class="enter-reg-block">
+                <label><input type="radio" name="enter-reg" class="enter-reg" id="loginCheck" checked><span class="enter-reg-span">Вход</span></label>
+                <label><input type="radio" name="enter-reg" class="enter-reg" id="regCheck"><span class="enter-reg-span">Регистрация</span></label>
+            </div>
+            <form class="enter-reg-inputs" id="enterBlock">
+                <input type="text" class="enter-reg-input" placeholder="Логин">
+                <input type="password" class="enter-reg-input" placeholder="Пароль">
+                <p class="recover-password-text">Напомнить пароль</p>
+                <input type="submit" class="login-btn" value="Войти">
+            </form>
+
+            <form action="" class="enter-reg-inputs" id="registrationBlock">
+                <input type="text" class="enter-reg-input" placeholder="Логин">
+                <input type="text" class="enter-reg-input" placeholder="E-mail">
+                <input type="password" class="enter-reg-input" placeholder="Пароль">
+                <label class="position-relative sogl"><input type="checkbox" class="recover-pass-check"><span class="recover-pass-check-after"></span><p class="recover-password-text">Согласен на обработку данных</p></label>
+                <input type="submit" class="login-btn login-reg-btn mx-auto" value="Зарегистрироваться">
+            </form>
+        </div>
     </section>
 
-    <section class="map w-100 position-relative">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A541cf73264f645339355f5cb714ae5579beac9878c5a282b1df7e867c0f348f0&amp;source=constructor" width="100%" height="386" frameborder="0"></iframe>
+    <section class="contacts pt-5 pb-4">
+        <div class="wrapper">
+            <div class="contacts-content d-flex justify-content-between flex-column flex-lg-row">
+                <div class="contacts-left text-center text-lg-left col-lg-3">
+                    <h2 class="contacts-main mb-0">Контакты:</h2>
+                    <p class="contacts-address mt-2 mb-0">Гомель, ул. Гагарина, 49</p>
+                    <p class="contacts-phone mt-2 mb-0"><a href="tel: + 375293853753">+ 375 29 385 37 53</a></p>
+                    <p class="contacts-mail mt-5"><a href="mailto: vvp@ofisnayaliga.by">vvp@ofisnayaliga.by</a></p>
+                </div>
+
+                <div class="contacts-right d-flex col-lg-9 d-flex justify-content-center justify-content-lg-end">
+                    <div class="contacts-inputs d-flex flex-column ">
+                        <input type="text" class="get-consultation-text-input" placeholder="Имя">
+                        <input type="text" class="get-consultation-phone-input" placeholder="+375 (_ _) _ _ _  _ _  _ _" id="phoneInput2">
+                        <button class="call-for-me">Связаться</button>
+                    </div>
+                    <div class="contacts-textarea-block">
+                        <textarea class="contacts-textarea" placeholder="Сообщение"></textarea>
+                        <button class="call-for-me call-for-me-mobile">Связаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 
