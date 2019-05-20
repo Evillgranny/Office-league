@@ -377,7 +377,9 @@
     .news-container {
         grid-template-columns: auto;
     }
-    .
+    .project-description {
+        font-size: 15px;
+    }
 }
 
 @media screen  and (max-width: 500px) {

@@ -782,6 +782,7 @@ button.owl-dot.active span {
     position: relative;
     border: 1px solid #ea000c;
     border-radius: 10px;
+    background: #fff;
 }
 .hit-card-main {
     margin-top: 48px;
@@ -2137,4 +2138,19 @@ button.owl-dot.active span {
     justify-content: space-between;
     grid-row-gap: 30px;
 }
-/*favourites*/
+/* end favourites*/
+/*project*/
+.project-description {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.project-description-span {
+    font-weight: 700;
+}
+.project-description-content {
+    margin-top: 10px;
+}
+/*end project*/
