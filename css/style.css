@@ -2015,6 +2015,9 @@ button.owl-dot.active span {
     top: 11px;
     left: 15px;
 }
+.recover-pass-check:checked ~ .recover-pass-check-after::after {
+    content: url(../img/images/checkbox-log-reg-checked.png);
+}
 .sogl .recover-password-text{
     margin-left: 50px;
 }
