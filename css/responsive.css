@@ -183,6 +183,16 @@
         margin-right: 10px;
     }
     /*end novice*/
+    .open-news-content .open-news-content-img {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    .open-news-content-img-second {
+        margin-left: 0;
+        width: 100%;
+        float: none;
+    }
 }
 @media screen  and (max-width: 767px) {
 /*!*contacts*/
@@ -355,6 +365,7 @@
     .news-container {
         grid-template-columns: auto;
     }
+    .
 }
 
 @media screen  and (max-width: 500px) {
@@ -398,6 +409,15 @@
     .get-cupon {
         padding-right: 10px;
         padding-left: 10px;
+    }
+    .open-news-content .open-news-content-img {
+        height: 200px;
+    }
+    .open-news-content-img-second {
+        height: 200px;
+    }
+    .open-news-content-img-big {
+        height: 400px;
     }
 }
 @media screen  and (max-width: 480px) {

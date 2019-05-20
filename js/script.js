@@ -248,6 +248,11 @@ $('.dec').on('click', function() {
        }
     });
 
+window.onload = function () {
+    $('.modal__button-close').click(function () {
+        modalClose($('.modal-call'))
+    })
+}
 // owl carousel
 
 $('.slider-one').owlCarousel({
