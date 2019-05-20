@@ -52,6 +52,9 @@
     .home-slider-item-text {
         font-size: 23px;
     }
+    .news-container {
+        grid-template-columns: auto auto;
+    }
 }
 @media screen  and (max-width: 1100px) {
     .header-container {
@@ -96,7 +99,10 @@
     .cotntacs-main-block {
         min-height: auto;
     }
-
+    .news-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 @media screen  and (max-width: 991px) {
     .header-container {
@@ -345,6 +351,9 @@
     /*end modals*/
     .price-result-textarea {
         width: 100%;
+    }
+    .news-container {
+        grid-template-columns: auto;
     }
 }
 
