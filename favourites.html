@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Новости</title>
+    <title>Избранное</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -278,109 +278,388 @@
 <main>
     <section class="news-block py-5 position-relative">
         <div class="wrapper">
-            <h1 class="news-main">Новости</h1>
+            <h1 class="news-main">Избранное</h1>
             <div class="news-hr"></div>
 
-            <div class="news-container">
-                <div class="news-card">
-                    <div class="news-card-img">
+            <div class="favourites-container">
 
+                <div class="hit-card">
+                    <div class="card-mask">
+                        <div class="mask-good-colors">
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                        </div>
+                        <button class="mask-to-cart">Заказать</button>
+                        <button class="card-mask-button">Подробнее</button>
                     </div>
-                    <h4 class="card-news-main">Новость 1</h4>
-
-                    <p class="card-news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                        to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        It was popularised in the 1960s with ...
-                    </p>
-                    <div class="show-news-btn-block d-flex justify-content-end">
-                        <a href="open-news.html"><button class="show-news-btn">Подробнее</button></a>
+                    <div class="card-lub">
+                        <p class="lub-content">луйбелы</p>
                     </div>
-                </div>
-
-                <div class="news-card">
-                    <div class="news-card-img">
-
+                    <div class="card-bonus" onclick="modalShow($('#bonusModal'))" onclick="modalShow($('#bonusModal'))">
+                        <p class="card-bonus-text">5р</p>
                     </div>
-                    <h4 class="card-news-main">Новость 1</h4>
-
-                    <p class="card-news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                        to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        It was popularised in the 1960s with ...
-                    </p>
-                    <div class="show-news-btn-block d-flex justify-content-end">
-                        <button class="show-news-btn">Подробнее</button>
-                    </div>
-                </div>
-
-                <div class="news-card">
-                    <div class="news-card-img">
-
-                    </div>
-                    <h4 class="card-news-main">Новость 1</h4>
-
-                    <p class="card-news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                        to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        It was popularised in the 1960s with ...
-                    </p>
-                    <div class="show-news-btn-block d-flex justify-content-end">
-                        <button class="show-news-btn">Подробнее</button>
+                    <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                    <img src="img/images/card-img.png" alt="" class="card-img">
+                    <div class="down-card-block">
+                        <div class="hit-card-price-and-sale">
+                            <span class="card-price">550р</span>
+                            <span class="old-price">700р</span>
+                        </div>
+                        <div class="hit-buttons">
+                            <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                            <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                            <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                        </div>
                     </div>
                 </div>
 
-                <div class="news-card">
-                    <div class="news-card-img">
-
+                <div class="hit-card">
+                    <div class="card-mask">
+                        <div class="mask-good-colors">
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                        </div>
+                        <button class="mask-to-cart">Заказать</button>
+                        <button class="card-mask-button">Подробнее</button>
                     </div>
-                    <h4 class="card-news-main">Новость 1</h4>
-
-                    <p class="card-news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                        to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        It was popularised in the 1960s with ...
-                    </p>
-                    <div class="show-news-btn-block d-flex justify-content-end">
-                        <button class="show-news-btn">Подробнее</button>
+                    <div class="card-lub d-none">
+                        <p class="lub-content">луйбелы</p>
+                    </div>
+                    <div class="card-bonus d-none" onclick="modalShow($('#bonusModal'))">
+                        <p class="card-bonus-text">5р</p>
+                    </div>
+                    <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                    <img src="img/images/card-img.png" alt="" class="card-img">
+                    <div class="down-card-block">
+                        <div class="hit-card-price-and-sale">
+                            <span class="card-price">550р</span>
+                            <span class="old-price">700р</span>
+                        </div>
+                        <div class="hit-buttons">
+                            <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                            <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                            <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                        </div>
                     </div>
                 </div>
 
-                <div class="news-card">
-                    <div class="news-card-img">
-
+                <div class="hit-card">
+                    <div class="card-mask">
+                        <div class="mask-good-colors">
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                        </div>
+                        <button class="mask-to-cart">Заказать</button>
+                        <button class="card-mask-button">Подробнее</button>
                     </div>
-                    <h4 class="card-news-main">Новость 1</h4>
-
-                    <p class="card-news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                        to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        It was popularised in the 1960s with ...
-                    </p>
-                    <div class="show-news-btn-block d-flex justify-content-end">
-                        <button class="show-news-btn">Подробнее</button>
+                    <div class="card-lub d-none">
+                        <p class="lub-content">луйбелы</p>
+                    </div>
+                    <div class="card-bonus d-none" onclick="modalShow($('#bonusModal'))">
+                        <p class="card-bonus-text">5р</p>
+                    </div>
+                    <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                    <img src="img/images/card-img.png" alt="" class="card-img">
+                    <div class="down-card-block">
+                        <div class="hit-card-price-and-sale">
+                            <span class="card-price">550р</span>
+                            <span class="old-price">700р</span>
+                        </div>
+                        <div class="hit-buttons">
+                            <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                            <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                            <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                        </div>
                     </div>
                 </div>
 
-                <div class="news-card">
-                    <div class="news-card-img">
-
+                <div class="hit-card">
+                    <div class="card-mask">
+                        <div class="mask-good-colors">
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                        </div>
+                        <button class="mask-to-cart">Заказать</button>
+                        <button class="card-mask-button">Подробнее</button>
                     </div>
-                    <h4 class="card-news-main">Новость 1</h4>
+                    <div class="card-lub d-none">
+                        <p class="lub-content">луйбелы</p>
+                    </div>
+                    <div class="card-bonus d-none" onclick="modalShow($('#bonusModal'))">
+                        <p class="card-bonus-text">5р</p>
+                    </div>
+                    <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                    <img src="img/images/card-img.png" alt="" class="card-img">
+                    <div class="down-card-block">
+                        <div class="hit-card-price-and-sale">
+                            <span class="card-price">550р</span>
+                            <span class="old-price">700р</span>
+                        </div>
+                        <div class="hit-buttons">
+                            <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                            <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                            <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                        </div>
+                    </div>
+                </div>
 
-                    <p class="card-news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                        to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        It was popularised in the 1960s with ...
-                    </p>
-                    <div class="show-news-btn-block d-flex justify-content-end">
-                        <button class="show-news-btn">Подробнее</button>
+
+                <div class="hit-card">
+                    <div class="card-mask">
+                        <div class="mask-good-colors">
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                        </div>
+                        <button class="mask-to-cart">Заказать</button>
+                        <button class="card-mask-button">Подробнее</button>
+                    </div>
+                    <div class="card-lub">
+                        <p class="lub-content">луйбелы</p>
+                    </div>
+                    <div class="card-bonus" onclick="modalShow($('#bonusModal'))" onclick="modalShow($('#bonusModal'))">
+                        <p class="card-bonus-text">5р</p>
+                    </div>
+                    <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                    <img src="img/images/card-img.png" alt="" class="card-img">
+                    <div class="down-card-block">
+                        <div class="hit-card-price-and-sale">
+                            <span class="card-price">550р</span>
+                            <span class="old-price">700р</span>
+                        </div>
+                        <div class="hit-buttons">
+                            <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                            <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                            <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hit-card">
+                    <div class="card-mask">
+                        <div class="mask-good-colors">
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                        </div>
+                        <button class="mask-to-cart">Заказать</button>
+                        <button class="card-mask-button">Подробнее</button>
+                    </div>
+                    <div class="card-lub d-none">
+                        <p class="lub-content">луйбелы</p>
+                    </div>
+                    <div class="card-bonus d-none" onclick="modalShow($('#bonusModal'))">
+                        <p class="card-bonus-text">5р</p>
+                    </div>
+                    <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                    <img src="img/images/card-img.png" alt="" class="card-img">
+                    <div class="down-card-block">
+                        <div class="hit-card-price-and-sale">
+                            <span class="card-price">550р</span>
+                            <span class="old-price">700р</span>
+                        </div>
+                        <div class="hit-buttons">
+                            <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                            <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                            <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hit-card">
+                    <div class="card-mask">
+                        <div class="mask-good-colors">
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                        </div>
+                        <button class="mask-to-cart">Заказать</button>
+                        <button class="card-mask-button">Подробнее</button>
+                    </div>
+                    <div class="card-lub d-none">
+                        <p class="lub-content">луйбелы</p>
+                    </div>
+                    <div class="card-bonus d-none" onclick="modalShow($('#bonusModal'))">
+                        <p class="card-bonus-text">5р</p>
+                    </div>
+                    <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                    <img src="img/images/card-img.png" alt="" class="card-img">
+                    <div class="down-card-block">
+                        <div class="hit-card-price-and-sale">
+                            <span class="card-price">550р</span>
+                            <span class="old-price">700р</span>
+                        </div>
+                        <div class="hit-buttons">
+                            <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                            <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                            <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hit-card">
+                    <div class="card-mask">
+                        <div class="mask-good-colors">
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                        </div>
+                        <button class="mask-to-cart">Заказать</button>
+                        <button class="card-mask-button">Подробнее</button>
+                    </div>
+                    <div class="card-lub d-none">
+                        <p class="lub-content">луйбелы</p>
+                    </div>
+                    <div class="card-bonus d-none" onclick="modalShow($('#bonusModal'))">
+                        <p class="card-bonus-text">5р</p>
+                    </div>
+                    <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                    <img src="img/images/card-img.png" alt="" class="card-img">
+                    <div class="down-card-block">
+                        <div class="hit-card-price-and-sale">
+                            <span class="card-price">550р</span>
+                            <span class="old-price">700р</span>
+                        </div>
+                        <div class="hit-buttons">
+                            <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                            <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                            <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hit-card">
+                    <div class="card-mask">
+                        <div class="mask-good-colors">
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                        </div>
+                        <button class="mask-to-cart">Заказать</button>
+                        <button class="card-mask-button">Подробнее</button>
+                    </div>
+                    <div class="card-lub">
+                        <p class="lub-content">луйбелы</p>
+                    </div>
+                    <div class="card-bonus" onclick="modalShow($('#bonusModal'))" onclick="modalShow($('#bonusModal'))">
+                        <p class="card-bonus-text">5р</p>
+                    </div>
+                    <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                    <img src="img/images/card-img.png" alt="" class="card-img">
+                    <div class="down-card-block">
+                        <div class="hit-card-price-and-sale">
+                            <span class="card-price">550р</span>
+                            <span class="old-price">700р</span>
+                        </div>
+                        <div class="hit-buttons">
+                            <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                            <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                            <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hit-card">
+                    <div class="card-mask">
+                        <div class="mask-good-colors">
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                        </div>
+                        <button class="mask-to-cart">Заказать</button>
+                        <button class="card-mask-button">Подробнее</button>
+                    </div>
+                    <div class="card-lub d-none">
+                        <p class="lub-content">луйбелы</p>
+                    </div>
+                    <div class="card-bonus d-none" onclick="modalShow($('#bonusModal'))">
+                        <p class="card-bonus-text">5р</p>
+                    </div>
+                    <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                    <img src="img/images/card-img.png" alt="" class="card-img">
+                    <div class="down-card-block">
+                        <div class="hit-card-price-and-sale">
+                            <span class="card-price">550р</span>
+                            <span class="old-price">700р</span>
+                        </div>
+                        <div class="hit-buttons">
+                            <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                            <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                            <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hit-card">
+                    <div class="card-mask">
+                        <div class="mask-good-colors">
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                        </div>
+                        <button class="mask-to-cart">Заказать</button>
+                        <button class="card-mask-button">Подробнее</button>
+                    </div>
+                    <div class="card-lub d-none">
+                        <p class="lub-content">луйбелы</p>
+                    </div>
+                    <div class="card-bonus d-none" onclick="modalShow($('#bonusModal'))">
+                        <p class="card-bonus-text">5р</p>
+                    </div>
+                    <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                    <img src="img/images/card-img.png" alt="" class="card-img">
+                    <div class="down-card-block">
+                        <div class="hit-card-price-and-sale">
+                            <span class="card-price">550р</span>
+                            <span class="old-price">700р</span>
+                        </div>
+                        <div class="hit-buttons">
+                            <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                            <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                            <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hit-card">
+                    <div class="card-mask">
+                        <div class="mask-good-colors">
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                            <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                        </div>
+                        <button class="mask-to-cart">Заказать</button>
+                        <button class="card-mask-button">Подробнее</button>
+                    </div>
+                    <div class="card-lub d-none">
+                        <p class="lub-content">луйбелы</p>
+                    </div>
+                    <div class="card-bonus d-none" onclick="modalShow($('#bonusModal'))">
+                        <p class="card-bonus-text">5р</p>
+                    </div>
+                    <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                    <img src="img/images/card-img.png" alt="" class="card-img">
+                    <div class="down-card-block">
+                        <div class="hit-card-price-and-sale">
+                            <span class="card-price">550р</span>
+                            <span class="old-price">700р</span>
+                        </div>
+                        <div class="hit-buttons">
+                            <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                            <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                            <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                        </div>
                     </div>
                 </div>
             </div>
 
+
             <div class="bread-crumbs d-none d-sm-block">
-                <a href="index.html"><img src="img/images/home.png" alt="" class="bread-crumb-img"></a><a href="news.html">Новости</a>
+                <a href="index.html"><img src="img/images/home.png" alt="" class="bread-crumb-img"></a><a href="favourites.html">Избранное</a>
             </div>
         </div>
     </section>

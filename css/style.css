@@ -2130,3 +2130,11 @@ button.owl-dot.active span {
 
 }
 /*end news*/
+/*favourites*/
+.favourites-container {
+    display: grid;
+    grid-template-columns: 330px 330px 330px 330px;
+    justify-content: space-between;
+    grid-row-gap: 30px;
+}
+/*favourites*/
