@@ -595,7 +595,7 @@ input:checked ~ .nav-phone::after {
     z-index: -2;
 }
 .slider-one {
-
+    margin-left: -1px;
 }
 .item-of-slider {
     width: 100%;
@@ -637,15 +637,23 @@ input:checked ~ .nav-phone::after {
     height: 100%;
     z-index: 4;
 }
-.slider-mask {
-    position: absolute;
-    width: 80%;
+.home-slider-mask {
     height: 100%;
+    width: 100%;
+    background: url(../img/images/mask-header.png);
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
-    z-index: 0;
-
+    position: absolute;
+    opacity: .83;
 }
+/*.slider-mask {*/
+/*    position: absolute;*/
+/*    width: 80%;*/
+/*    height: 100%;*/
+/*    -webkit-background-size: 100% 100%;*/
+/*    background-size: 100% 100%;*/
+/*    z-index: 0;*/
+/*}*/
 .home-slider-item-main {
     color: #ffffff;
     font-size: 70px;
@@ -685,9 +693,6 @@ input:checked ~ .nav-phone::after {
     height: 3px !important;
     opacity: 1 !important;
     background-color: #ffffff !important;
-}
-.owl-item {
-    margin-right: 0;
 }
 button.owl-dot.active span {
     background-color: rgb(234, 0, 12) !important;
@@ -2039,6 +2044,7 @@ button.owl-dot.active span {
     height: 100%;
     border-radius: 8px;
     border: 1px solid #ea000c;
+    cursor: pointer;
 }
 .news-hr {
     height: 2px;
@@ -2156,3 +2162,57 @@ button.owl-dot.active span {
     margin-top: 10px;
 }
 /*end project*/
+/*start open-project*/
+.open-project-content__slider-block {
+    width: 570px;
+}
+.open-project-content__slider-block_big-slide {
+    width: 100%;
+    height: 330px;
+    border: 1px solid #ea000c;
+    border-radius: 8px;
+}
+.slider-four {
+    margin-top: 30px;
+}
+.slider-four__item_image {
+    width: 110px !important;
+    height: 110px !important;
+    border: 1px solid #ea000c;
+    border-radius: 8px;
+    z-index: 200;
+    cursor: pointer;
+}
+.slider-four .owl-stage {
+    pointer-events: none;
+}
+.slider-four .owl-stage-outer {
+    pointer-events: none;
+}
+.slider-four {
+    pointer-events: none;
+}
+.slider-four__item {
+    pointer-events: auto !important;
+}
+.slider-four .owl-nav {
+    pointer-events: auto;
+}
+.slider-four .owl-next {
+    background: url(../img/images/arrow-slider-open-prj.png) no-repeat !important;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    width: 9px;
+    height: 23px;
+    position: absolute;
+    right: 0;
+    top: 41px;
+}
+.slider-four .owl-prev {
+    display: none !important;
+}
+.slider-four .owl-next span{
+    color: transparent;
+}
+
+/*end open project*/

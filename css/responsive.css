@@ -37,6 +37,9 @@
         width: 350px;
         height: 200px;
     }
+    .home-slider-mask {
+        width: 130% !important  ;
+    }
 }
 
 @media screen  and (max-width: 1260px) {
@@ -168,6 +171,12 @@
         font-weight: 400;
         width: 182px;
         height: 46px;
+    }
+    .home-slider-mask {
+        width: 100%;
+        background: url("../img/images/minibg.png") no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
     }
     .owl-dots {
         bottom: 15%;
@@ -442,7 +451,6 @@
         font-size: 40px;
     }
     .home-slider-item{
-        background: url("../img/images/mobile-slider.png");
         height: 648px;
     }
     .home-slider {

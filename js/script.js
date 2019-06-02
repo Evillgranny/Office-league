@@ -23,6 +23,7 @@ let cartCounter = 1;
 let cardBonusBtn = document.querySelectorAll('.card-bonus');
 
 
+
 function showCatalog() {
     $(defaultMenu).hide();
     $(catalogMenu).show();
@@ -251,8 +252,19 @@ $('.dec').on('click', function() {
 window.onload = function () {
     $('.modal__button-close').click(function () {
         modalClose($('.modal-call'))
-    })
-}
+    });
+
+    let fourSlider = document.querySelector('.slider-four');
+    let bigSlider = document.querySelector('.open-project-content__slider-block_big-slide');
+    let fourSliderItem = fourSlider.querySelectorAll('.slider-four__item_image');
+    console.log()
+    bigSlider.src = fourSliderItem[0].src;
+    fourSlider.onclick = function (e) {
+        if (e.target.className === "slider-four__item_image") {
+            bigSlider.src =  e.target.src
+        }
+    };
+};
 // owl carousel
 
 $('.slider-one').owlCarousel({
@@ -279,6 +291,7 @@ $('.slider-two').owlCarousel({
         }
     }
 });
+
 $('.thrid-slider').owlCarousel({
     loop:true,
     nav: true,
@@ -287,6 +300,17 @@ $('.thrid-slider').owlCarousel({
     responsive:{
         0:{
             items:  1
+        }
+    }
+});
+
+$('.slider-four').owlCarousel({
+    nav: true,
+    dots: false,
+    autoplay:  false,
+    responsive:{
+        0:{
+            items:  4
         }
     }
 });
@@ -311,79 +335,8 @@ $('#project-1').on('click', function() {
         }],
     })
 
-});$('#project-2').on('click', function() {
-    $(this).lightGallery({
-        thumbnail:true,
-        animateThumb: true,
-        dynamic: true,
-        downloadUrl: false,
-        dynamicEl: [{
-            "src": 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            'thumb': 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-        }, {
-            'src': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            'thumb': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-        }, {
-            'src': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            'thumb': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-        }],
-    })
-
-});$('#project-3').on('click', function() {
-    $(this).lightGallery({
-        thumbnail:true,
-        animateThumb: true,
-        dynamic: true,
-        downloadUrl: false,
-        dynamicEl: [{
-            "src": 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            'thumb': 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-        }, {
-            'src': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            'thumb': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-        }, {
-            'src': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            'thumb': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-        }],
-    })
-
-});$('#project-4').on('click', function() {
-    $(this).lightGallery({
-        thumbnail:true,
-        animateThumb: true,
-        dynamic: true,
-        downloadUrl: false,
-        dynamicEl: [{
-            "src": 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            'thumb': 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-        }, {
-            'src': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            'thumb': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-        }, {
-            'src': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            'thumb': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-        }],
-    })
-
-});$('#project-5').on('click', function() {
-    $(this).lightGallery({
-        thumbnail:true,
-        animateThumb: true,
-        dynamic: true,
-        downloadUrl: false,
-        dynamicEl: [{
-            "src": 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            'thumb': 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-        }, {
-            'src': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            'thumb': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-        }, {
-            'src': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            'thumb': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-        }],
-    })
-
-});$('#project-6').on('click', function() {
+});
+$('#project-2').on('click', function() {
     $(this).lightGallery({
         thumbnail:true,
         animateThumb: true,
@@ -402,3 +355,80 @@ $('#project-1').on('click', function() {
     })
 
 });
+$('#project-3').on('click', function() {
+    $(this).lightGallery({
+        thumbnail:true,
+        animateThumb: true,
+        dynamic: true,
+        downloadUrl: false,
+        dynamicEl: [{
+            "src": 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+            'thumb': 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        }, {
+            'src': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+            'thumb': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        }, {
+            'src': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+            'thumb': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        }],
+    })
+
+});
+$('#project-4').on('click', function() {
+    $(this).lightGallery({
+        thumbnail:true,
+        animateThumb: true,
+        dynamic: true,
+        downloadUrl: false,
+        dynamicEl: [{
+            "src": 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+            'thumb': 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        }, {
+            'src': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+            'thumb': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        }, {
+            'src': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+            'thumb': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        }],
+    })
+
+});
+$('#project-5').on('click', function() {
+    $(this).lightGallery({
+        thumbnail:true,
+        animateThumb: true,
+        dynamic: true,
+        downloadUrl: false,
+        dynamicEl: [{
+            "src": 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+            'thumb': 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        }, {
+            'src': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+            'thumb': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        }, {
+            'src': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+            'thumb': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        }],
+    })
+
+});
+$('#project-6').on('click', function() {
+    $(this).lightGallery({
+        thumbnail:true,
+        animateThumb: true,
+        dynamic: true,
+        downloadUrl: false,
+        dynamicEl: [{
+            "src": 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+            'thumb': 'https://images.pexels.com/photos/2250394/pexels-photo-2250394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        }, {
+            'src': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+            'thumb': 'https://images.pexels.com/photos/2248526/pexels-photo-2248526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        }, {
+            'src': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+            'thumb': 'https://images.pexels.com/photos/2324272/pexels-photo-2324272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+        }],
+    })
+
+});
+
