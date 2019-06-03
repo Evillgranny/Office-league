@@ -28,6 +28,9 @@
     .favourites-container {
         grid-template-columns: 330px 330px 330px;
     }
+    .opinion-block {
+        margin-left: 20px;
+    }
 }
 @media screen  and (max-width: 1300px) {
     .down-nav-menu {
@@ -208,10 +211,24 @@
         margin-right: 10px;
     }
     /*end novice*/
+    .open-news-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .open-news-content .open-news-content-img {
         margin-right: 0;
         float: none;
         width: 100%;
+    }
+    .ml-120 {
+        margin-left: 0;
+    }
+    .mr-120 {
+        margin-right: 0;
+    }
+    .open-news-content-img-big {
+        margin-right: 0;
+        margin-left: 0;
     }
     .open-news-content-img-second {
         margin-left: 0;
