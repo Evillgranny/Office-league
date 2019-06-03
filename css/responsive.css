@@ -118,6 +118,10 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .opinion-block {
+        width: auto;
+        margin-left: 20px;
+    }
 }
 @media screen  and (max-width: 991px) {
     .header-container {
@@ -213,6 +217,26 @@
         margin-left: 0;
         width: 100%;
         float: none;
+    }
+    /*open project start*/
+    .open-project-content {
+        grid-template-columns: 100%;
+    }
+    .open-project-content__slider-block {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .open-project-content__slider-description-block {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+    /*open project end*/
+    .opinion-block_admin-opinion {
+        width: auto;
+    }
+    .opinion-block__description_admin {
+        width: 100%;
     }
 }
 @media screen  and (max-width: 767px) {
@@ -384,10 +408,29 @@
         width: 100%;
     }
     .news-container {
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
     }
     .project-description {
         font-size: 15px;
+    }
+    .open-project-content__slider-block {
+        width: 100%;
+    }
+    .comments-opinion-block {
+        flex-direction: column;
+    }
+    .comments-block__form {
+        margin-right: 0;
+        width: auto;
+    }
+    .news-main {
+        font-size: 25px;
+    }
+    .recommended-products-main {
+        font-size: 25px;
+    }
+    .opinion-block {
+        margin-left: 0;
     }
 }
 
@@ -444,6 +487,9 @@
     }
     .favourites-container {
         grid-template-columns: auto;
+    }
+    .open-project-content__slider-block_big-slide {
+        height: 250px;
     }
 }
 @media screen  and (max-width: 480px) {

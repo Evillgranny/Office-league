@@ -190,6 +190,7 @@ $(function(){
 $(function(){
     $('#priceResultPhone').inputmask("+375 (99) 999 -99 -99");
 });
+
 function modalClose(elem){
     elem.hide();
 }
@@ -254,16 +255,18 @@ window.onload = function () {
         modalClose($('.modal-call'))
     });
 
-    let fourSlider = document.querySelector('.slider-four');
-    let bigSlider = document.querySelector('.open-project-content__slider-block_big-slide');
-    let fourSliderItem = fourSlider.querySelectorAll('.slider-four__item_image');
-    console.log()
-    bigSlider.src = fourSliderItem[0].src;
-    fourSlider.onclick = function (e) {
-        if (e.target.className === "slider-four__item_image") {
-            bigSlider.src =  e.target.src
-        }
-    };
+    if (document.querySelector('.slider-four')) {
+        let fourSlider = document.querySelector('.slider-four');
+        let bigSlider = document.querySelector('.open-project-content__slider-block_big-slide');
+        let fourSliderItem = fourSlider.querySelectorAll('.slider-four__item_image');
+        console.log()
+        bigSlider.src = fourSliderItem[0].src;
+        fourSlider.onclick = function (e) {
+            if (e.target.className === "slider-four__item_image") {
+                bigSlider.src =  e.target.src
+            }
+        };
+    }
 };
 // owl carousel
 
@@ -310,7 +313,13 @@ $('.slider-four').owlCarousel({
     autoplay:  false,
     responsive:{
         0:{
-            items:  4
+            items:  2
+        },
+        500: {
+            items: 3
+        },
+        720: {
+            items: 4
         }
     }
 });
