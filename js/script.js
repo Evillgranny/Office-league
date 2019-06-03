@@ -272,11 +272,12 @@ window.onload = function () {
 
 $('.slider-one').owlCarousel({
     loop:true,
+    dots:true,
     nav:false,
     autoplay:true,
     responsive:{
         0:{
-            items:1
+            items: 1
         }
     }
 });

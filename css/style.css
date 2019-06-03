@@ -683,18 +683,18 @@ input:checked ~ .nav-phone::after {
     background: #ffffff;
     color: rgb(234, 0, 12);
 }
-.owl-dots {
+.slider-one .owl-dots {
     right: 10%;
     bottom: 25%;
     position: absolute;
 }
-.owl-dot span{
+.slider-one .owl-dot span{
     width: 96px !important;
     height: 3px !important;
     opacity: 1 !important;
     background-color: #ffffff !important;
 }
-button.owl-dot.active span {
+.slider-one button.owl-dot.active span {
     background-color: rgb(234, 0, 12) !important;
 }
 /*header slider end*/
