@@ -267,6 +267,21 @@ window.onload = function () {
             }
         };
     }
+
+    if (document.querySelector('.slider-five')) {
+        let fiveSlider = document.querySelector('.slider-five');
+        let fiveSliderItem = fiveSlider.querySelectorAll('.slider-five__item');
+        fiveSlider.onclick = function (e) {
+            console.log(e.target)
+            if (e.target.className === "slider-five__item") {
+                let currentTaget = e.target;
+                for (var i = 0; i < fiveSliderItem.length;i++) {
+                    fiveSliderItem[i].classList.remove('selected-color');
+                }
+                currentTaget.classList.add('selected-color')
+            }
+        }
+    }
 };
 // owl carousel
 
@@ -309,9 +324,12 @@ $('.thrid-slider').owlCarousel({
 });
 
 $('.slider-four').owlCarousel({
+    loop:true,
     nav: true,
     dots: false,
     autoplay:  false,
+    mouseDrag : false,
+    touchDrag : false,
     responsive:{
         0:{
             items:  2
@@ -325,7 +343,27 @@ $('.slider-four').owlCarousel({
     }
 });
 
-// Галерея партнёры
+$('.slider-five').owlCarousel({
+    loop:true,
+    nav: true,
+    dots: false,
+    autoplay:  false,
+    mouseDrag : false,
+    touchDrag : false,
+    responsive:{
+        0:{
+            items:  2
+        },
+        500: {
+            items: 3
+        },
+        720: {
+            items: 7
+        }
+    }
+});
+
+// Галерея проекты
 
 $('#project-1').on('click', function() {
     $(this).lightGallery({

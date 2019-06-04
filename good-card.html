@@ -317,10 +317,89 @@
                 <div class="good-card-description-block position-relative">
                     <p class="good-card-description-block_text"><span class="good-card-description-block_text_bold">Артикул:</span> 4769849</p>
                     <p class="good-card-description-block_text"><span class="good-card-description-block_text_bold">Цвета модели:</span></p>
-                    <a href="favourites.html"><img src="img/images/favorit-in-good-card.png" class="good-card-description-block-image-favorit" alt=""></a>
-                    <a href="favourites.html"><img src="img/images/sravn-in-good-card.png" class="good-card-description-block-image-sravn" alt=""></a>
+                    <label><input type="checkbox" class="good-card-description-block_favorit-input"><div src="img/images/favorit-in-good-card.png" class="good-card-description-block-image-favorit"></div></label>
+                    <label><input type="checkbox" class="good-card-description-block_sravn-input"><div src="img/images/sravn-in-good-card.png" class="good-card-description-block-image-sravn"></div></label>
+
+                    <div class="owl-carousel slider-five owl-theme">
+                        <div class="slider-five__item">
+                            <img src="img/images/1col.png" alt="" class="slider-five__item_image">
+                        </div>
+                        <div class="slider-five__item">
+                            <img src="img/images/2col.png" alt="" class="slider-five__item_image">
+                        </div>
+                        <div class="slider-five__item">
+                            <img src="img/images/3col.png" alt="" class="slider-five__item_image">
+                        </div>
+                        <div class="slider-five__item">
+                            <img src="img/images/4col.png" alt="" class="slider-five__item_image">
+                        </div>
+                        <div class="slider-five__item">
+                            <img src="img/images/5col.png" alt="" class="slider-five__item_image">
+                        </div>
+                        <div class="slider-five__item">
+                            <img src="img/images/6col.png" alt="" class="slider-five__item_image">
+                        </div>
+                        <div class="slider-five__item">
+                            <img src="img/images/7col.png" alt="" class="slider-five__item_image">
+                        </div>
+                        <div class="slider-five__item">
+                            <img src="img/images/1col.png" alt="" class="slider-five__item_image">
+                        </div>
+                        <div class="slider-five__item">
+                            <img src="img/images/2col.png" alt="" class="slider-five__item_image">
+                        </div>
+                    </div>
+
+                    <div class="good-card-description-block__price-block">
+                        <p class="good-card-description-block__price-block_p">ЦЕНА: <span class="good-card-description-block__price-block_span">3000 Р</span></p>
+
+                        <div class="good-card-description-block__price-block__amount">
+                            <label><input type="checkbox" class="good-card-description-block__price-block__amount__cart-check"><div class="good-card-description-block__price-block__image"></div></label>
+                            <div class="cart-counter-block d-flex">
+                                <button class="dec">–</button>
+                                <input id="countID" class="amount" value="1" readonly="">
+                                <button class="inc">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="good-card-description-block__button-block">
+                        <button class="good-card-description-block__button-block_btn">Купить</button>
+                        <button class="good-card-description-block__button-block_btn">В корзину</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="wrapper">
+                <div class="good-btns">
+                    <label for="description"><div class="good-card-description-block__button-block_btn d-flex justify-content-center flex-column text-center">Купить</div></label>
+                    <label for="characteristics"><div class="good-card-description-block__button-block_btn d-flex justify-content-center flex-column text-center">Характеристики</div></label>
+                    <label for="comments"><div class="good-card-description-block__button-block_btn d-flex justify-content-center flex-column text-center">Отзывы</div></label>
+                </div>
+
+                <input type="radio" name="good-btns" id="description" checked>
+                <div class="description-block">
+                    <p class="description-block_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                        in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                        PageMaker including versions of Lorem Ipsum. </p>
+                </div>
+
+                <input type="radio" name="good-btns" id="characteristics">
+                <div class="characteristics-block">
+                    <ul class="characteristics-block-lists">
+                        <li class="characteristics-block-list"><span class="characteristics_main">Рамка у стёкол шкафов:</span><span class="characteristics_description">БЕЗ РАМОК</span></li>
+                    </ul>
+                </div>
+
+                <input type="radio" name="good-btns" id="comments">
+                <div class="comments-block">
+                    комментарии
                 </div>
             </div>
+
+
 
             <h2 class="recommended-products-main">Рекомендуемые товары</h2>
             <div class="news-hr"></div>
