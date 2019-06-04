@@ -2238,6 +2238,8 @@ input:checked ~ .nav-phone::after {
 .open-project-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 .open-project-content__slider-description-block_text {
     font-size: 20px;
@@ -2555,6 +2557,8 @@ input:checked ~ .nav-phone::after {
     margin-top: 60px;
     display: flex;
     width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 .good-description-block {
     display: none;
@@ -2573,6 +2577,8 @@ input:checked ~ .nav-phone::after {
 }
 .description-block {
     display: none;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 .description-block_text {
     font-size: 13px;
@@ -2586,13 +2592,19 @@ input:checked ~ .nav-phone::after {
 }
 .characteristics_main {
     margin-left: 30px;
-    float: left;
+    position: absolute;
+    align-self: center;
+    text-transform: uppercase;
 }
 .characteristics_description {
     margin-left: 415px;
+    align-self: center;
+    text-transform: uppercase;
 }
 .characteristics-block {
     display: none;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 #characteristics {
     display: none;
@@ -2606,10 +2618,33 @@ input:checked ~ .nav-phone::after {
 #comments {
     display: none;
 }
-.comments-block {
+.comments-block-good {
     display: none;
+    padding-left: 120px;
+    padding-right: 120px;
 }
-#comments:checked ~ .comments-block {
+#comments:checked ~ .comments-block-good {
     display: block;
+    margin-top: 40px;
+}
+.characteristics-block {
+    margin-top: 40px;
+}
+.characteristics-block-list {
+    background: #ffffff;
+    border-bottom: 1px solid #ea000c;
+    box-sizing: border-box;
+    height: 41px;
+    margin-bottom: 0;
+    display: flex;
+}
+.characteristics-block-list:nth-child(even) {
+    background: rgba(255,255,255,.11);
+}
+.comments-block-good .comments-block__form {
+    margin-top: 0;
+}
+.comments-block-good .opinion-block {
+    margin-top: 0;
 }
 /*end good card*/

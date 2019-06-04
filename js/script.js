@@ -272,7 +272,6 @@ window.onload = function () {
         let fiveSlider = document.querySelector('.slider-five');
         let fiveSliderItem = fiveSlider.querySelectorAll('.slider-five__item');
         fiveSlider.onclick = function (e) {
-            console.log(e.target)
             if (e.target.className === "slider-five__item") {
                 let currentTaget = e.target;
                 for (var i = 0; i < fiveSliderItem.length;i++) {
@@ -352,10 +351,10 @@ $('.slider-five').owlCarousel({
     touchDrag : false,
     responsive:{
         0:{
-            items:  2
+            items:  4
         },
-        500: {
-            items: 3
+        600: {
+            items: 5
         },
         720: {
             items: 7
