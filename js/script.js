@@ -21,7 +21,8 @@ let choiseCity = document.querySelector('.choiseCity');
 let cityList = document.querySelector('.city-list');
 let cartCounter = 1;
 let cardBonusBtn = document.querySelectorAll('.card-bonus');
-
+let filterBtn = document.querySelector('.show-filter-btn');
+let filterCloseBtn = document.querySelector('.filter-close-btn');
 
 
 function showCatalog() {
@@ -216,7 +217,6 @@ $('#getCallBack').click(function () {
     $('#callBack').show();
 });
 
-
 $(cityList).click(function () {
     $('#currentCityModal').hide();
 });
@@ -250,6 +250,8 @@ $('.dec').on('click', function() {
        }
     });
 
+
+
 window.onload = function () {
     $('.modal__button-close').click(function () {
         modalClose($('.modal-call'))
@@ -280,6 +282,25 @@ window.onload = function () {
                 currentTaget.classList.add('selected-color')
             }
         }
+    }
+
+    if (document.querySelector('.js-range-slider')) {
+        let myFromSpan = document.querySelector('.range-numbers__from_span');
+        let myToSpan = document.querySelector('.range-numbers__to_span');
+        let ionFrom = document.querySelector('.irs-from');
+        let ionTo = document.querySelector('.irs-to');
+
+        myFromSpan.textContent = 'От: ' + ionFrom.textContent;
+        myToSpan.textContent = 'До: ' + ionTo.textContent;
+
+        $(ionFrom).bind("DOMSubtreeModified",function(){
+            myFromSpan.textContent = 'От: ' + this.textContent;
+        });
+
+        $(ionTo).bind("DOMSubtreeModified",function(){
+            myToSpan.textContent = 'До: ' + this.textContent;
+        });
+
     }
 };
 // owl carousel
@@ -479,3 +500,47 @@ $('#project-6').on('click', function() {
 
 });
 
+$('#series').change(function () {
+    if($('#series').prop("checked")) {
+        $('.series-content').removeClass('d-none')
+    } else {
+        $('.series-content').addClass('d-none');
+    }
+});
+
+$('#price').change(function () {
+    if($('#price').prop("checked")) {
+        $('.price-content').removeClass('d-none')
+    } else {
+        $('.price-content').addClass('d-none');
+    }
+});
+$('#made').change(function () {
+    if($('#made').prop("checked")) {
+        $('.made-content').removeClass('d-none')
+    } else {
+        $('.made-content').addClass('d-none');
+    }
+});
+$('.catalog-choose').change(function () {
+    if ($('#showBlock').prop("checked")) {
+        $('.catalog-block-content').removeClass('d-none');
+        $('.catalog-list').addClass('d-none');
+    } else {
+        $('.catalog-block-content').addClass('d-none');
+        $('.catalog-list').removeClass('d-none');
+    }
+});
+
+filterBtn.onclick = function () {
+    showFilter()
+};
+function showFilter () {
+    let filterBlock = document.querySelector('.catalog-block__filter');
+     filterBlock.classList.add('r-0')
+}
+
+filterCloseBtn.onclick = function () {
+    let filterBlock = document.querySelector('.catalog-block__filter');
+    filterBlock.classList.remove('r-0');
+};

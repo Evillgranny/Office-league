@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Каталог</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!--    Range-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="gallery/css/lightgallery.css" />
+    <!--owl-carousel-->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-content">
+        <div class="wrapper">
+            <section class="header-container">
+                <a class="responsive-logo" href="index.html"><img class="nav-logo" src="img/svg/logo.svg" alt=""></a>
+                <nav class="navigation">
+                    <ul class="navbar-menu" role="navigation">
+                        <li class="navbar-item">
+                            <a href="#" class="nav-enter">Войти <img class="nav-enter-img" src="img/svg/login-01.svg" alt=""></a>
+                            <label><input type="checkbox" class="d-none"><span class="nav-warehouse" id="warehouseChoice">Склад: Гомель</span></label>
+                            <div class="warehouses-block">
+                                <ul class="warehouses">
+                                    <li>Склад: Гомель</li>
+                                    <li>Склад: Минск</li>
+                                    <li>Склад: Гродно</li>
+                                    <li>Склад: Бобруйск</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar-item">
+                            <p class="nav-work-time">С 9.00 до 18.00</p>
+                        </li>
+                        <li class="navbar-item">
+                            <label><input type="checkbox" class="d-none"><p class="nav-address" id="changeAddress">Гомель, ул. Гагарина, 49</p></label>
+                            <ul class="addresses">
+                                <li>Гомель, ул. Гагарина, 43</li>
+                                <li>Гомель, ул. Гагарина, 44</li>
+                                <li>Гомель, ул. Гагарина, 45</li>
+                                <li>Гомель, ул. Гагарина, 49</li>
+                            </ul>
+                        </li>
+                        <li class="navbar-item">
+                            <label><input type="checkbox" class="d-none"><span class="nav-phone" id="changePhones">+ 375 29 385 37 53</span></label>
+                            <ul class="phones">
+                                <li>+ 375 33 385 37 53</li>
+                                <li>+ 375 44 385 37 53</li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="navbar-item">
+                            <button class="nav-btn" id="getCallBack">Обратный звонок</button>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </div>
+
+    <nav class="down-nav" id="downNav">
+
+        <div class="wrapper">
+            <div class="nav-content">
+                <ul class="down-nav-menu">
+                    <li class="down-nav-item">
+                        <a  href="index.html">Главная </a>
+                    </li>
+                    <li class="down-nav-item ">
+                        <a class="dropdown-catalog" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false" href="#">Каталог</a>
+                        <div class="dropdown-menu my-dropdown-menu">
+                            <ul class="catalog-dropdown">
+                                <li class="my-dropdown-item">
+                                    <a class="dropdown-item" href="#">МЕБЕЛЬ ДЛЯ РУКОВОДИТЕЛЕЙ</a>
+                                    <div class="drop-in-drop-container">
+                                        <ul class="drop-in-drop">
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="my-dropdown-item">
+                                    <a class="dropdown-item" href="#">МЕБЕЛЬ ДЛЯ РУКОВОДИТЕЛЕЙ</a>
+                                    <div class="drop-in-drop-container">
+                                        <ul class="drop-in-drop">
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="my-dropdown-item">
+                                    <a class="dropdown-item" href="#">МЕБЕЛЬ ДЛЯ РУКОВОДИТЕЛЕЙ</a>
+                                    <div class="drop-in-drop-container">
+                                        <ul class="drop-in-drop">
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="my-dropdown-item">
+                                    <a class="dropdown-item" href="#">МЕБЕЛЬ ДЛЯ РУКОВОДИТЕЛЕЙ</a>
+                                    <div class="drop-in-drop-container">
+                                        <ul class="drop-in-drop">
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="my-dropdown-item">
+                                    <a class="dropdown-item" href="#">МЕБЕЛЬ ДЛЯ РУКОВОДИТЕЛЕЙ</a>
+                                    <div class="drop-in-drop-container">
+                                        <ul class="drop-in-drop">
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="my-dropdown-item">
+                                    <a class="dropdown-item" href="#">МЕБЕЛЬ ДЛЯ РУКОВОДИТЕЛЕЙ</a>
+                                    <div class="drop-in-drop-container">
+                                        <ul class="drop-in-drop">
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                            <li class="drop-in-drop-item"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="down-nav-item">
+                        <a href="about-company.html">О компании</a>
+                    </li>
+                    <li class="down-nav-item">
+                        <a href="projects.html">Проекты</a>
+                    </li>
+                    <li class="down-nav-item">
+                        <a href="news.html">Новости</a>
+                    </li>
+                    <li class="down-nav-item">
+                        <a href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <div class="shop-basket">
+                    <img class="shop-basket-item sravn" src="img/svg/sravn.svg" alt="">
+                    <span class="shop-basket-item-number">1</span>
+                    <a href="favourites.html"><img class="shop-basket-item favorite" src="img/svg/favorite-01.svg" alt=""></a>
+                    <span class="shop-basket-item-number">1</span>
+                    <a href="cart.html"><img class="shop-basket-item b-cart" src="img/svg/cart-01.svg" alt=""></a>
+                    <span class="shop-basket-item-number">1</span>
+                    <span class="price">580р</span>
+                    <input class="search-input" type="text">
+                    <img class="search-shop" src="img/svg/search-01.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<!--header-mobile-->
+<section class="header-mobile d-lg-none">
+    <a class="responsive-logo" href="index.html">
+        <img class="nav-logo" src="img/svg/logo.svg" alt="">
+    </a>
+    <div class="entery-block">
+        <a href="#" class="nav-enter">Войти <img class="nav-enter-img" src="img/svg/login-01.svg" alt=""></a>
+        <label><input type="checkbox" class="d-none"><span class="nav-warehouse" id="warehouseChoiceMobile">Склад: Гомель</span></label>
+        <ul class="warehouses-mobile">
+            <li>Склад: Гомель</li>
+            <li>Склад: Минск</li>
+            <li>Склад: Гродно</li>
+            <li>Склад: Бобруйск</li>
+        </ul>
+    </div>
+    <div class="mobile-phone-address">
+        <label><input type="checkbox" class="d-none"><p class="nav-address" id="changeAddressMobile">Гомель, ул. Гагарина, 49</p></label>
+        <ul class="addressesMobile">
+            <li>Гомель, ул. Гагарина, 43</li>
+            <li>Гомель, ул. Гагарина, 44</li>
+            <li>Гомель, ул. Гагарина, 45</li>
+            <li>Гомель, ул. Гагарина, 49</li>
+        </ul>
+        <label><input type="checkbox" class="d-none"><span class="nav-phone" href="#" id="changeMobilePhone">+ 375 29 385 37 53</span></label>
+        <ul class="phones-mobile">
+            <li>+ 375 33 385 37 53</li>
+            <li>+ 375 44 385 37 53</li>
+        </ul>
+    </div>
+</section>
+
+<div class="down-nav-mobile d-lg-none">
+    <div class="shop-basket-mobile ">
+        <img class="shop-basket-item sravn" src="img/svg/sravn.svg" alt="">
+        <span class="shop-basket-item-number">1</span>
+        <a href="favourites.html"><img class="shop-basket-item favorite" src="img/svg/favorite-01.svg" alt=""></a>
+        <span class="shop-basket-item-number">1</span>
+        <a href="cart.html"><img class="shop-basket-item b-cart" src="img/svg/cart-01.svg" alt=""></a>
+        <span class="shop-basket-item-number">1</span>
+        <span class="price">580р</span>
+    </div>
+    <div class="mobile-search">
+        <input class="mobile-search-input" type="text" placeholder="Поиск">
+        <img class="mobile-search-shop" src="img/svg/search-01.svg" alt="">
+        <input class="hamburger-input" type="checkbox" id="hambr"><label class="hamburger-label" for="hambr"><img class="hamburger" src="img/images/hamb.png" alt=""></label>
+    </div>
+    <div class="mobile-navigation text-center d-lg-none">
+        <ul class="mobile-navigation-buttons default-menu">
+            <li class="mobile-navigation-list"><a href="index.html">ГЛАВНАЯ</a></li>
+            <li class="mobile-navigation-list catalog-mobile-btn" onclick="showCatalog()"><a href="#">КАТАЛОГ</a>
+            <li class="mobile-navigation-list"><a href="about-company.html">О КОМПАНИИ</a></li>
+            <li class="mobile-navigation-list"><a href="projects.html">ПРОЕКТЫ</a></li>
+            <li class="mobile-navigation-list"><a href="news.html">НОВОСТИ</a></li>
+            <li class="mobile-navigation-list"><a href="contacts.html">КОНТАКТЫ</a></li>
+            <span class="cross" onclick="closeMenu()"></span>
+        </ul>
+
+        <ul class="mobile-navigation-buttons catalog-menu">
+            <li class="mobile-navigation-list"><a onclick="showBossFurniture()" href="#">Мебель для руководителей<button class="inCatalogNext"></button></a></li>
+            <li class="mobile-navigation-list"><a href="#">Мебель для персонала</a></li>
+            <li class="mobile-navigation-list"><a href="#">Мебель для руководителей</a></li>
+            <li class="mobile-navigation-list"><a href="#">Мебель для персонала</a></li>
+            <li class="mobile-navigation-list"><a href="#">Мебель для руководителей</a></li>
+            <li class="mobile-navigation-list"><a href="#">Мебель для персонала</a></li>
+            <span class="cross" onclick="closeMenu()"></span>
+        </ul>
+
+        <ul class="mobile-navigation-buttons boss-furniture">
+            <li class="mobile-navigation-list"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+            <li class="mobile-navigation-list"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a>
+            <li class="mobile-navigation-list"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+            <li class="mobile-navigation-list"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+            <li class="mobile-navigation-list"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+            <li class="mobile-navigation-list"><a href="#">НАБОР МЕБЕЛИ МАЭСТРО</a></li>
+            <span class="cross" onclick="closeMenu()"></span>
+        </ul>
+    </div>
+</div>
+
+
+<main>
+    <section class="catalog-section py-5 position-relative">
+        <div class="wrapper">
+            <h1 class="news-main">Каталог</h1>
+            <div class="news-hr"></div>
+
+            <div class="catalog-block">
+                <div class="catalog-block__filter">
+                        <div class="filter-close-btn"></div>
+
+                    <label for="series" class="series-label d-block position-relative">
+                        <input type="checkbox" class="catalog-block__filter_check" id="series" checked>
+                        <span class="catalog-block__filter_btn">Серия</span>
+                    </label>
+
+
+                    <div class="series-content">
+                        <label><input type="checkbox" class="series-content_checkbox"><span class="series-content_span">Название</span></label>
+                        <label><input checked type="checkbox" class="series-content_checkbox"><span class="series-content_span">Название</span></label>
+                        <label><input type="checkbox" class="series-content_checkbox"><span class="series-content_span">Название</span></label>
+                        <label><input checked type="checkbox" class="series-content_checkbox"><span class="series-content_span">Название</span></label>
+                        <label><input type="checkbox" class="series-content_checkbox"><span class="series-content_span">Название</span></label>
+                        <label><input type="checkbox" class="series-content_checkbox"><span class="series-content_span">Название</span></label>
+                    </div>
+
+                    <label for="price" class="series-label position-relative">
+                        <input type="checkbox" class="catalog-block__filter_check" id="price" checked>
+                        <span class="catalog-block__filter_btn">Цена</span>
+                    </label>
+
+                    <div class="price-content">
+                        <input type="text" class="js-range-slider" name="my_range" value="" />
+                        <div class="price-content__range-numbers">
+                            <div class="range-numbers__from">
+                                <span class="range-numbers__from_span"></span>
+                            </div>
+
+                            <div class="range-numbers__to">
+                                <span class="range-numbers__to_span"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label for="made" class="series-label d-block position-relative">
+                        <input type="checkbox" class="catalog-block__filter_check" id="made" checked>
+                        <span class="catalog-block__filter_btn">Производитель</span>
+                    </label>
+
+
+                    <div class="made-content">
+                        <label><input type="checkbox" class="series-content_checkbox"><span class="series-content_span">Название</span></label>
+                        <label><input checked type="checkbox" class="series-content_checkbox"><span class="series-content_span">Название</span></label>
+                        <label><input type="checkbox" class="series-content_checkbox"><span class="series-content_span">Название</span></label>
+                        <label><input checked type="checkbox" class="series-content_checkbox"><span class="series-content_span">Название</span></label>
+                        <label><input type="checkbox" class="series-content_checkbox"><span class="series-content_span">Название</span></label>
+                        <label><input type="checkbox" class="series-content_checkbox"><span class="series-content_span">Название</span></label>
+                    </div>
+
+                    <button class="lets-filter">
+                        Применить
+                    </button>
+                </div>
+
+                <div class="catalog-content">
+
+                    <p class="catalog-content__start-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <button class="show-filter-btn d-none">ФИЛЬТР</button>
+
+                    <div class="catalog-choose">
+                        <label for="showBlock"><input name="catalog-choise" checked type="radio" id="showBlock"><div class="catalog-go-block"></div></label>
+                        <label for="showList"><input  name="catalog-choise" type="radio" id="showList"><div class="catalog-go-list"></div></label>
+                    </div>
+
+                    <div  class="catalog-block-content">
+                        <div class="hit-card">
+                        <div class="card-mask">
+                            <div class="mask-good-colors">
+                                <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                                <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                                <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                            </div>
+                            <button class="mask-to-cart">Заказать</button>
+                            <button class="card-mask-button">Подробнее</button>
+                        </div>
+                        <div class="card-lub">
+                            <p class="lub-content">луйбелы</p>
+                        </div>
+                        <div class="card-bonus" onclick="modalShow($('#bonusModal'))">
+                            <p class="card-bonus-text">5р</p>
+                        </div>
+                        <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                        <img src="img/images/card-img.png" alt="" class="card-img">
+                        <div class="down-card-block">
+                            <div class="hit-card-price-and-sale">
+                                <span class="card-price">550р</span>
+                                <span class="old-price">700р</span>
+                            </div>
+                            <div class="hit-buttons">
+                                <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                                <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                                <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="hit-card">
+                            <div class="card-mask">
+                                <div class="mask-good-colors">
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                                </div>
+                                <button class="mask-to-cart">Заказать</button>
+                                <button class="card-mask-button">Подробнее</button>
+                            </div>
+                            <div class="card-lub">
+                                <p class="lub-content">луйбелы</p>
+                            </div>
+                            <div class="card-bonus" onclick="modalShow($('#bonusModal'))">
+                                <p class="card-bonus-text">5р</p>
+                            </div>
+                            <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                            <img src="img/images/card-img.png" alt="" class="card-img">
+                            <div class="down-card-block">
+                                <div class="hit-card-price-and-sale">
+                                    <span class="card-price">550р</span>
+                                    <span class="old-price">700р</span>
+                                </div>
+                                <div class="hit-buttons">
+                                    <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                                    <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                                    <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hit-card">
+                            <div class="card-mask">
+                                <div class="mask-good-colors">
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                                </div>
+                                <button class="mask-to-cart">Заказать</button>
+                                <button class="card-mask-button">Подробнее</button>
+                            </div>
+                            <div class="card-lub">
+                                <p class="lub-content">луйбелы</p>
+                            </div>
+                            <div class="card-bonus" onclick="modalShow($('#bonusModal'))">
+                                <p class="card-bonus-text">5р</p>
+                            </div>
+                            <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                            <img src="img/images/card-img.png" alt="" class="card-img">
+                            <div class="down-card-block">
+                                <div class="hit-card-price-and-sale">
+                                    <span class="card-price">550р</span>
+                                    <span class="old-price">700р</span>
+                                </div>
+                                <div class="hit-buttons">
+                                    <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                                    <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                                    <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hit-card">
+                            <div class="card-mask">
+                                <div class="mask-good-colors">
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                                </div>
+                                <button class="mask-to-cart">Заказать</button>
+                                <button class="card-mask-button">Подробнее</button>
+                            </div>
+                            <div class="card-lub">
+                                <p class="lub-content">луйбелы</p>
+                            </div>
+                            <div class="card-bonus" onclick="modalShow($('#bonusModal'))">
+                                <p class="card-bonus-text">5р</p>
+                            </div>
+                            <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                            <img src="img/images/card-img.png" alt="" class="card-img">
+                            <div class="down-card-block">
+                                <div class="hit-card-price-and-sale">
+                                    <span class="card-price">550р</span>
+                                    <span class="old-price">700р</span>
+                                </div>
+                                <div class="hit-buttons">
+                                    <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                                    <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                                    <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hit-card">
+                            <div class="card-mask">
+                                <div class="mask-good-colors">
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                                </div>
+                                <button class="mask-to-cart">Заказать</button>
+                                <button class="card-mask-button">Подробнее</button>
+                            </div>
+                            <div class="card-lub">
+                                <p class="lub-content">луйбелы</p>
+                            </div>
+                            <div class="card-bonus" onclick="modalShow($('#bonusModal'))">
+                                <p class="card-bonus-text">5р</p>
+                            </div>
+                            <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                            <img src="img/images/card-img.png" alt="" class="card-img">
+                            <div class="down-card-block">
+                                <div class="hit-card-price-and-sale">
+                                    <span class="card-price">550р</span>
+                                    <span class="old-price">700р</span>
+                                </div>
+                                <div class="hit-buttons">
+                                    <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                                    <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                                    <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hit-card">
+                            <div class="card-mask">
+                                <div class="mask-good-colors">
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color black-bg"></div></label>
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color grey-bg"></div></label>
+                                    <label><input class="color-check d-none" type="checkbox"><div class="mask-good-color white-bg"></div></label>
+                                </div>
+                                <button class="mask-to-cart">Заказать</button>
+                                <button class="card-mask-button">Подробнее</button>
+                            </div>
+                            <div class="card-lub">
+                                <p class="lub-content">луйбелы</p>
+                            </div>
+                            <div class="card-bonus" onclick="modalShow($('#bonusModal'))">
+                                <p class="card-bonus-text">5р</p>
+                            </div>
+                            <h3 class="hit-card-main">Офисное кресло Lamark</h3>
+                            <img src="img/images/card-img.png" alt="" class="card-img">
+                            <div class="down-card-block">
+                                <div class="hit-card-price-and-sale">
+                                    <span class="card-price">550р</span>
+                                    <span class="old-price">700р</span>
+                                </div>
+                                <div class="hit-buttons">
+                                    <label><input type="checkbox" class="check-for-favorit d-none"><div class="card-favorit"></div></label>
+                                    <label><input type="checkbox" class="check-for-cart d-none"><div class="card-cart"></div></label>
+                                    <label><input type="checkbox" class="check-for-sravn d-none"><div class="card-sravn"></div></label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="catalog-list d-none">
+                        <div class="catalog-list_li position-relative">
+                            <div class="card-bonus" onclick="modalShow($('#bonusModal'))">
+                                <p class="card-bonus-text">5р</p>
+                            </div>
+                            <div class="catalog-list_li_left">
+                                <img src="img/images/card-img.png" alt="" class="catalog-list-img">
+                                <div class="catalog-list-btns">
+                                    <label class="catalog-list-label"><input type="checkbox" class="catalog-list-input"><span class="catalog-list-favourite"></span></label>
+                                    <label class="catalog-list-label"><input type="checkbox" class="catalog-list-input"><span class="catalog-list-cart"></span></label>
+                                    <label class="catalog-list-label"><input type="checkbox" class="catalog-list-input"><span class="catalog-list-sravn"></span></label>
+                                </div>
+                            </div>
+                            <div class="catalog-list_li_right">
+                                <h2 class="catalog-list_li_right_main">
+                                    Офисное кресло Lamark
+                                </h2>
+                                <p class="catalog-list_li_right_text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                                <div class="catalog-list_li_right__button-block">
+                                    <button class="catalog-list_li_right_btn">купить</button>
+                                    <div class="catalog-list_li_right__button-block__price-block">
+                                        <span class="catalog-list_li_right__button-block__price-block_current-price">550Р</span>
+                                        <span class="catalog-list_li_right__button-block__price-block_old-price">700Р</span>
+                                        <div class="cart-counter-block align-self-center d-flex">
+                                            <button class="dec">–</button>
+                                            <input id="countID" class="amount" value="1" readonly>
+                                            <button class="inc">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-list_li position-relative">
+                            <div class="card-bonus" onclick="modalShow($('#bonusModal'))">
+                                <p class="card-bonus-text">5р</p>
+                            </div>
+                            <div class="catalog-list_li_left">
+                                <img src="img/images/card-img.png" alt="" class="catalog-list-img">
+                                <div class="catalog-list-btns">
+                                    <label class="catalog-list-label"><input type="checkbox" class="catalog-list-input"><span class="catalog-list-favourite"></span></label>
+                                    <label class="catalog-list-label"><input type="checkbox" class="catalog-list-input"><span class="catalog-list-cart"></span></label>
+                                    <label class="catalog-list-label"><input type="checkbox" class="catalog-list-input"><span class="catalog-list-sravn"></span></label>
+                                </div>
+                            </div>
+                            <div class="catalog-list_li_right">
+                                <h2 class="catalog-list_li_right_main">
+                                    Офисное кресло Lamark
+                                </h2>
+                                <p class="catalog-list_li_right_text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                                <div class="catalog-list_li_right__button-block">
+                                    <button class="catalog-list_li_right_btn">купить</button>
+                                    <div class="catalog-list_li_right__button-block__price-block">
+                                        <span class="catalog-list_li_right__button-block__price-block_current-price">550Р</span>
+                                        <span class="catalog-list_li_right__button-block__price-block_old-price">700Р</span>
+                                        <div class="cart-counter-block align-self-center d-flex">
+                                            <button class="dec">–</button>
+                                            <input id="countID" class="amount" value="1" readonly>
+                                            <button class="inc">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-list_li position-relative">
+                            <div class="card-bonus" onclick="modalShow($('#bonusModal'))">
+                                <p class="card-bonus-text">5р</p>
+                            </div>
+                            <div class="catalog-list_li_left">
+                                <img src="img/images/card-img.png" alt="" class="catalog-list-img">
+                                <div class="catalog-list-btns">
+                                    <label class="catalog-list-label"><input type="checkbox" class="catalog-list-input"><span class="catalog-list-favourite"></span></label>
+                                    <label class="catalog-list-label"><input type="checkbox" class="catalog-list-input"><span class="catalog-list-cart"></span></label>
+                                    <label class="catalog-list-label"><input type="checkbox" class="catalog-list-input"><span class="catalog-list-sravn"></span></label>
+                                </div>
+                            </div>
+                            <div class="catalog-list_li_right">
+                                <h2 class="catalog-list_li_right_main">
+                                    Офисное кресло Lamark
+                                </h2>
+                                <p class="catalog-list_li_right_text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                                <div class="catalog-list_li_right__button-block">
+                                    <button class="catalog-list_li_right_btn">купить</button>
+                                    <div class="catalog-list_li_right__button-block__price-block">
+                                        <span class="catalog-list_li_right__button-block__price-block_current-price">550Р</span>
+                                        <span class="catalog-list_li_right__button-block__price-block_old-price">700Р</span>
+                                        <div class="cart-counter-block align-self-center d-flex">
+                                            <button class="dec">–</button>
+                                            <input id="countID" class="amount" value="1" readonly>
+                                            <button class="inc">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-navigation">
+                <a href="#" class="side-button">В начало</a>
+                <a href="#" class="catalog-navigation__arrow"></a>
+                <a href="#" class="catalog-navigation_circle-btn">1</a>
+                <a href="#" class="catalog-navigation_circle-btn">2</a>
+                <a href="#" class="catalog-navigation_circle-btn">3</a>
+                <a href="#" class="catalog-navigation_circle-btn">4</a>
+                <a href="#" class="catalog-navigation__arrow-right"></a>
+                <a href="#" class="side-button">В конец</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer class="footer py-3">
+    <div class="wrapper d-none d-lg-block">
+        <div class="footer-content">
+            <div class="footer-logo mr-2">
+                <a href="#"><img src="img/images/logo.png" alt=""></a>
+            </div>
+
+            <div class="footer-links d-flex flex-column">
+                <ul class="footer-lists d-flex">
+                    <li class="footer-list mr-2"><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li class="footer-list mr-2"><a href="#">КАТАЛОГ</a></li>
+                    <li class="footer-list mr-2"><a href="about-company.html">О КОМПАНИИ</a></li>
+                    <li class="footer-list mr-2"><a href="projects.html">ПРОЕКТЫ</a></li>
+                    <li class="footer-list mr-2"><a href="news.html">НОВОСТИ</a></li>
+                    <li class="footer-list"><a href="contacts.html">КОНТАКТЫ</a></li>
+                </ul>
+
+                <div class="footer-social">
+                    <a href="#" class="mr-3"><img src="img/images/footervk.png" alt=""></a>
+                    <a href="#" class="mr-3"><img src="img/images/footerfb.png" alt=""></a>
+                    <a href="#"><img src="img/images/footerinsta.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="footer-text">
+                <p class="text-right mb-0 mt-2">© 2016-2017 «Офисная Лига»</p>
+                <p class="text-right mb-0">Интернет-магазин мебели зарегистрирован в торговом реестре 30 июля 2010 г.</p>
+                <p class="text-right mb-0">Свидетельство о регистрации №290476589 выдано Брестским горисполкомом 30.07.2010.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-mobile d-lg-none">
+        <div class="wrapper">
+            <div class="footer-mobile-content">
+                <div class="footer-logo w-100 text-center">
+                    <a href="#"><img src="img/images/logo.png" alt=""></a>
+                </div>
+
+                <div class="footer-mobile-nav d-flex justify-content-around mt-4">
+                    <div class="left-footer-mobile-content">
+                        <ul class="footer-lists d-flex flex-column text-center">
+                            <li class="footer-list mr-2"><a href="index.html">ГЛАВНАЯ</a></li>
+                            <li class="footer-list mr-2"><a href="#">КАТАЛОГ</a></li>
+                            <li class="footer-list mr-2"><a href="about-company.html">О КОМПАНИИ</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-footer-mobile-content">
+                        <ul class="footer-lists d-flex flex-column text-center">
+                            <li class="footer-list mr-2"><a href="projects.html">ПРОЕКТЫ</a></li>
+                            <li class="footer-list mr-2"><a href="news.html">НОВОСТИ</a></li>
+                            <li class="footer-list"><a href="contacts.html">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-mobile-social d-flex justify-content-center mt-4">
+                    <a href="#" class="mr-3"><img src="img/images/footervk.png" alt=""></a>
+                    <a href="#" class="mr-3"><img src="img/images/footerfb.png" alt=""></a>
+                    <a href="#"><img src="img/images/footerinsta.png" alt=""></a>
+                </div>
+
+                <div class="footer-mobile-text text-center mt-4">
+                    <p class="text-center mb-0 mt-2">© 2016-2017 «Офисная Лига»</p>
+                    <p class="text-center mb-0">Интернет-магазин мебели зарегистрирован в торговом реестре 30 июля 2010 г.</p>
+                    <p class="text-center mb-0">Свидетельство о регистрации №290476589 выдано Брестским горисполкомом 30.07.2010.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<section class="modal-window" id="bonusModal">
+    <h2 class="modal-main">
+        Ваш бонус 5 р
+    </h2>
+    <p class="modal-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <button class="modal-button" onclick="modalClose($('#bonusModal'))">Хочу заказать</button>
+    <div class="modal-cross" onclick="modalClose($('#bonusModal'))"></div>
+</section>
+
+<section class="modal-window" id="callBack">
+    <h2 class="modal-main">
+        Заявка на обратный звонок
+    </h2>
+    <div class="modal-call-back-inputs d-flex flex-column justify-content-center text-center">
+        <input type="text" class="get-consultation-text-input mx-auto mt-4 text-center" placeholder="Имя">
+        <input type="text" class="get-consultation-phone-input mx-auto mt-4 text-center" id="modalPhoneInput" placeholder="+375 (_ _) _ _ _  _ _  _ _">
+    </div>
+    <button class="modal-button mt-4 red-btn" id="sendCb" onclick="modalClose($('#callBack'))">Отправить</button>
+    <div class="modal-cross" id="goCallBack" onclick="modalClose($('#callBack'))"></div>
+</section>
+
+<section class="modal-window" id="goodCallBack">
+    <h2 class="modal-main">
+        Ваша заявка успешно отправлена
+    </h2>
+</section>
+
+<section class="modal-call">
+    <p class="modal__paragraph">Мы обязательно вам перезвоним!</p>
+    <form action="#" method="post">
+        <label class="visually-hidden" for="user-number">Номер телефона</label>
+        <input class="modal__input" id="user-number" type="text" placeholder="Ваш номер телефона">
+        <button class="modal__button" type="submit">Заказать звонок</button>
+    </form>
+    <button class="modal__button-close" type="button"></button>
+</section>
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="js/ionSlider.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!--lg scripts-->
+<script src="js/lightgallery-all.js"></script>
+<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+<!--Owlcarusel script-->
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
