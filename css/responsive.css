@@ -346,6 +346,9 @@
     .catalog-list_li_right {
         border-left: none;
     }
+    .filter-close-btn {
+        display: block;
+    }
 }
 @media screen  and (max-width: 767px) {
 /*!*contacts*/
@@ -829,5 +832,4 @@
     .cross {
         right: 5px ;
     }
-
 }

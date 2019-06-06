@@ -531,16 +531,19 @@ $('.catalog-choose').change(function () {
         $('.catalog-list').removeClass('d-none');
     }
 });
+if (filterBtn) {
+    filterBtn.onclick = function () {
+        showFilter()
+    };
 
-filterBtn.onclick = function () {
-    showFilter()
-};
+    filterCloseBtn.onclick = function () {
+        let filterBlock = document.querySelector('.catalog-block__filter');
+        filterBlock.classList.remove('r-0');
+    };
+}
+
 function showFilter () {
     let filterBlock = document.querySelector('.catalog-block__filter');
      filterBlock.classList.add('r-0')
 }
 
-filterCloseBtn.onclick = function () {
-    let filterBlock = document.querySelector('.catalog-block__filter');
-    filterBlock.classList.remove('r-0');
-};

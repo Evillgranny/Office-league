@@ -3100,4 +3100,7 @@ input:checked ~ .nav-phone::after {
     right: 5px;
     cursor: pointer;
 }
+.filter-close-btn {
+    display: none;
+}
 /*end catalog section*/
